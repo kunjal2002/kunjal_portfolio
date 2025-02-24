@@ -134,7 +134,8 @@ nav ul li a:hover {
     /* padding: 15px; */
     border-radius: 4px;
     /* color: red; */
-  }
+    /* scroll-behavior: smooth; */
+}
   
   /* #myBtn:hover {
     background-color: #555;
@@ -244,166 +245,118 @@ nav ul li a:hover {
     box-shadow: 10px 8px 8px rgb(175, 173, 173);
 }
 
+.work-experience-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.work-experience-title h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+/* Timeline Container */
 .work-experience-timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
 }
 
-/* The actual timeline (the vertical ruler) */
-.work-experience-timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+/* Individual Experience Containers */
+.experience-container {
+    color: black;
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Container around content */
-.container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
+experience-container:hover {
+    transform: translateY(-5px);
 }
 
-/* The circles on the timeline */
-.container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+/* Job Title & Logo */
+.experience-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-/* Place the container to the left */
-.left {
-    left: 0;
+.experience-header h2 {
+    font-size: 20px;
+    margin: 0;
+    flex-grow: 1;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+/* 
+.experience-header img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-left: 10px;
+} */
+
+.experience-container h4 {
+    font-size: 16px;
+    margin: 1px 0 5px;
+    color: #555;
 }
 
-/* Place the container to the right */
-.right {
-    left: 50%;
+.experience-container hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+.experience-container ul {
+    padding-left: 20px;
+    margin-top: 0;
 }
 
-/* Add arrows to the right container (pointing left) */
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-    left: -16px;
-}
-
-/* The actual content */
-.content {
-    padding: 20px 30px;
-    background-color: rgb(59, 58, 58);
-    position: relative;
-    border-radius: 6px;
-    line-height: 2rem;
-    text-align: justify;
+.experience-container li {
+    margin-bottom: 8px;
     font-size: 14px;
+    line-height: 1.5;
 }
 
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+/* Date Styling */
+.experience-date {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
 
-    /* Place the timelime to the left */
-    .work-experience-timeline::after {
-        left: 31px;
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    .work-experience-title h2 {
+        font-size: 28px;
     }
-
-    /* Full-width containers */
-    .container {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-
-    /* Make sure that all arrows are pointing leftwards */
-    .container::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    /* Make sure all circles are at the same spot */
-    .left::after,
-    .right::after {
-        left: 15px;
-    }
-
-    /* Make all right containers behave like the left ones */
-    .right {
-        left: 0%;
+    .experience-container {
+        width: 80%;
     }
 }
 
-.title-right {
-    margin-top: 25px;
-    float: right;
-    /* width: %; */
-    padding-right: 340px;
-    text-align: justify;
-    position: relative;
-    
-    h3 {
-      margin: 0;
-      font-size: 100%;
-      letter-spacing: 1px;
+@media (max-width: 767px) {
+    .work-experience-title h2 {
+        font-size: 22px;
     }
-    
-  }
-
-.title-left {
-    margin-top: 21px;
-    float: left;
-    /* width: %; */
-    padding-left: 340px;
-    text-align: justify;
-    /* position: relative; */
-    
-    h3 {
-      /* margin-top: 30px; */
-      font-size: 100%;
-      letter-spacing: 1px;
+    .experience-container {
+        width: 95%;
     }
-    
-  }
+}
 
 .projects-row-1 {
     /* width: 1000px; */
@@ -725,81 +678,73 @@ nav ul li a:hover {
     }
 }
 
-.domain-row-1 {
-    /* width: 1000px; */
+.domain-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.domain-title h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.domain-container {
     display: flex;
-    background-color: rgb(0 18 51 / var(--tw-bg-opacity));
-    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* #domain-1-logo{
-    transition: width 2s, height 2s, transform 2s;
+.domain-item {
+    color: black;
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
-#domain-1-logo:hover{
-    width: 300px;
-  height: 300px;
-  transform: rotate(360deg);
-} */
-
-.domain-1-description {
-    position: absolute;
-    left: 0%;
-    margin-top: 20px;
-    margin-left: 121px;
-    width: 380px;
-    padding: 10px;
-    line-height: 1.8rem;
-    background: #333;
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
-    border: 4px solid transparent;
-    border-radius: 5px;
-    /* margin-bottom: 1.5rem !important; */
-    font-size: 15px;
-    box-sizing: border-box;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
+.domain-item:hover {
+    transform: translateY(-5px);
 }
 
-.domain-2-description {
-    position: absolute;
-    left: 28%;
-    margin-top: 20px;
-    margin-left: 155px;
-    width: 380px;
-    padding: 10px;
-    line-height: 1.8rem;
-    background: #333;
-    /* float: left; */
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
-    border: 4px solid transparent;
-    border-radius: 5px;
-    /* margin-bottom: 1.5rem !important; */
-    font-size: 15px;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
+.domain-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    background-color: white;
+    margin-bottom: 10px;
 }
 
-.domain-3-description {
-    position: absolute;
-    left: 28%;
-    margin-top: 20px;
-    margin-left: 610px;
-    width: 380px;
-    padding: 10px;
-    line-height: 1.8rem;
-    background: #333;
-    /* float: left; */
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
-    border: 4px solid transparent;
-    border-radius: 5px;
-    /* margin-bottom: 1.5rem !important; */
-    font-size: 15px;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
+.domain-item h3 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (min-width: 768px) { 
+    .domain-title h2 {
+        font-size: 28px;
+    }
+    .domain-container {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767px) {
+    .domain-title h2 {
+        font-size: 22px;
+    }
+    .domain-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .site-footer {
