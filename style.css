@@ -44,7 +44,7 @@ nav {
     display: flex;
     width: 10000px;
     margin: auto;
-    padding: 10px 340px;
+    padding: 10px 328px;
     align-items: center;
     justify-content: space-between;
     box-shadow: 10px 10px 18px rgb(63, 62, 62);
@@ -61,7 +61,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1px;
     text-decoration: none;
     color: white;
@@ -280,9 +280,10 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: left;
     transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 7px 7px rgb(255, 0, 0);
 }
 
-experience-container:hover {
+.experience-container:hover {
     transform: translateY(-5px);
 }
 
@@ -358,8 +359,7 @@ experience-container:hover {
     }
 }
 
-.projects-row-1 {
-    /* width: 1000px; */
+/* .projects-row-1 {
     display: flex;
     background-color: rgb(0 18 51 / var(--tw-bg-opacity));
 }
@@ -369,8 +369,6 @@ experience-container:hover {
     width: 338px;
     height:385px;
     background-color: white;
-    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
-    /* margin-bottom: 10px; */
 }
 
 .proj-1-description {
@@ -382,15 +380,11 @@ experience-container:hover {
     padding: 10px;
     line-height: 1.8rem;
     background: #333;
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
     border: 4px solid transparent;
     border-radius: 5px;
     margin-bottom: 1.5rem !important;
     font-size: 15px;
     box-sizing: border-box;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
 }
 
 .proj-2-logo{
@@ -398,8 +392,6 @@ experience-container:hover {
     width: 338px;
     height:385px;
     background-color: white;
-    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
-    /* margin-bottom: 10px; */
 }
 
 .proj-2-description {
@@ -412,15 +404,10 @@ experience-container:hover {
     padding: 10px;
     line-height: 1.8rem;
     background: #333;
-    /* float: left; */
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
     border: 4px solid transparent;
     border-radius: 5px;
     margin-bottom: 1.5rem !important;
     font-size: 15px;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
 }
 
 .proj-3-logo{
@@ -428,8 +415,6 @@ experience-container:hover {
     width: 355px;
     height:385px;
     background-color: white;
-    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
-    /* margin-bottom: 10px; */
 }
 
 .proj-3-description {
@@ -441,16 +426,11 @@ experience-container:hover {
     padding: 10px;
     line-height: 1.8rem;
     background: #333;
-    /* float: left; */
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
     border: 4px solid transparent;
     border-radius: 5px;
     margin-bottom: 1.5rem !important;
     font-size: 15px;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
-}
+} */
 
 /* .proj-3 #proj-3-description-id:hover {
     position: absolute;
@@ -464,8 +444,7 @@ experience-container:hover {
     font-size: 21px;
 } */
 
-.project-row-2 {
-    /* width: 1000px; */
+/* .project-row-2 {
     padding-top: 420px;
     padding-left: 250px;
     display: flex;
@@ -478,8 +457,6 @@ experience-container:hover {
     width: 355px;
     height:385px;
     background-color: white;
-    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
-    /* margin-bottom: 10px; */
 }
 
 .proj-4-description {
@@ -491,15 +468,10 @@ experience-container:hover {
     padding: 10px;
     line-height: 1.8rem;
     background: #333;
-    /* float: left; */
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
     border: 4px solid transparent;
     border-radius: 5px;
     margin-bottom: 1.5rem !important;
     font-size: 15px;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
 }
 
 .proj-5-logo{
@@ -507,8 +479,6 @@ experience-container:hover {
     width: 360px;
     height:385px;
     background-color: white;
-    /* box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); */
-    /* margin-bottom: 10px; */
 }
 
 .proj-5-description {
@@ -520,15 +490,77 @@ experience-container:hover {
     padding: 10px;
     line-height: 1.8rem;
     background: #333;
-    /* float: left; */
-    /* -webkit-transition: .3s all ease; */
-    /* -o-transition: .3s all ease; */
-    /* transition: .3s all ease; */
     border: 4px solid transparent;
     border-radius: 5px;
     margin-bottom: 1.5rem !important;
     font-size: 15px;
-    /* box-shadow: 10px 8px 8px rgb(175, 173, 173); */
+} */
+.project-title {
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    width: 25%;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    height: 495px;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card .project-content {
+    padding: 15px;
+    text-align: center;
+    color: black;
+}
+
+.project-card p {
+    padding-top:-100px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.project-card ul {
+    font-size: 12px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .project-card {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 70%;
+    }
 }
 
 .skills-ucd {
