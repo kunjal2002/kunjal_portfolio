@@ -350,7 +350,8 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 767px) {
+/* earlier it was 767px */
+@media (max-width: 1024px) {
     .work-experience-title h2 {
         font-size: 22px;
     }
@@ -515,7 +516,7 @@ nav ul li a:hover {
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    height: 495px;
+    height: 500px;
 }
 
 .project-card:hover {
@@ -579,6 +580,23 @@ nav ul li a:hover {
     margin-bottom: 1.5rem !important;
     font-size: 15px;
     box-shadow: 10px 8px 8px rgb(175, 173, 173);
+}
+
+@media (max-width: 1024px) {
+    .skills-ucd {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-title {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-ucd {
+        width: 70%;
+    }
 }
 
 .extracurriculars-timeline {
@@ -769,7 +787,8 @@ nav ul li a:hover {
     }
 }
 
-@media (max-width: 767px) {
+/*earlier it was 767px*/
+@media (max-width: 1024px) {
     .domain-title h2 {
         font-size: 22px;
     }
