@@ -612,7 +612,7 @@ nav ul li a:hover {
     text-align: center;
     margin-top: 50px;
     letter-spacing: 2px;
-    color: black;
+    color: white;
 }
 
 h2 {
@@ -735,7 +735,7 @@ hr{
     letter-spacing: 2px;
     flex-wrap: wrap;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .domain-title h2 {
