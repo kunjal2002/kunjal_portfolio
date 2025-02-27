@@ -24,10 +24,10 @@
 
         .education-item {
             letter-spacing: 1px;
-            color: white;
+            color: black;
             width: 90%;
             max-width: 600px;
-            background: #333;
+            background: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -35,10 +35,16 @@
             border: 4px solid transparent;
             margin-bottom: 1.5rem !important;
             font-size: 15px;
-            box-shadow: 10px 8px 8px rgb(175, 173, 173);
+            box-shadow: 2px 2px 5px #007bff;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensures content is evenly spaced */
+            justify-content: space-between;
+            /* Ensures content is evenly spaced */
+            transition: transform 0.3s ease;
+        }
+
+        .education-item:hover{
+            transform: scale(1.03);
         }
 
         .education-logo img {
@@ -47,7 +53,8 @@
             margin-bottom: 15px;
         }
 
-        h3, h4 {
+        h3,
+        h4 {
             margin: 10px 0;
         }
 
@@ -83,13 +90,12 @@
         }
 
         /* General Styling */
-    
     </style>
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <img src="images/Untitled design.png" style="width: 100%;height: 40px;background-color: black;">
+    <button onclick="topFunction()" id="myBtn" title="Go to top" style="background-color: white;">
+        <img src="images/blue_upward_arrow-removebg-preview.png" style="width: 100%;height: 40px;background-color: white;">
     </button>
 
 
@@ -113,23 +119,27 @@
                 <h1 style="font-size: 33px;">Software Engineer and Full-Stack Developer</h1>
                 <br>
                 <!-- <h2>Hello, I am Kunjal Agrawal!</h2><br> -->
-                 <p style="letter-spacing: 1px;font-size: 15px;">
-                    Hello! I am Kunjal, currently pursuing an MS in Computer Science at the University of California, Davis. 
-                With my expertise spanning both front-end and back-end development, and a solid background in databases, I
-                excel
-                in utilizing a diverse range of technologies. I create seamless user experiences using React, Bootstrap, TypeScript
-                and
-                JavaScript on the front-end, and optimize backend systems with JAVA, Python, and SQL. Additionally, my skills in data
-                analysis and machine learning enable me to derive meaningful insights and drive data-driven
-                decision-making.
-                
-                    
-                 </p>                
+                <p style="letter-spacing: 1px;font-size: 15px;">
+                    Hello! I am Kunjal, currently pursuing an MS in Computer Science at the University of California,
+                    Davis.
+                    With my expertise spanning both front-end and back-end development, and a solid background in
+                    databases, I
+                    excel
+                    in utilizing a diverse range of technologies. I create seamless user experiences using React,
+                    Bootstrap, TypeScript
+                    and
+                    JavaScript on the front-end, and optimize backend systems with JAVA, Python, and SQL. Additionally,
+                    my skills in data
+                    analysis and machine learning enable me to derive meaningful insights and drive data-driven
+                    decision-making.
+
+
+                </p>
                 <br>
                 </p>
 
                 <a href="Kunjal_SDE.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-            </div>  
+            </div>
             <div class="image">
                 <img src="images/professional_2_4x5_image.JPG" class="my-photo" style="margin-bottom: 68px;">
             </div>
@@ -137,11 +147,11 @@
         </div>
 
 
-        <div class="main_body">
+        <div class="main_body" style="background-color: white;">
             <br><br><br><br>
 
             <div class="education-title" id="education-title">
-                <h2 style="color: white;">EDUCATION</h2>
+                <h2 style="color: black;">EDUCATION</h2>
             </div><br><br><br><br>
 
 
@@ -192,27 +202,30 @@
                 </div> -->
                 <div class="education-item">
                     <div class="education-logo">
-                        <img src="images/The_University_of_California_Davis.svg" alt="UC Davis logo" style="width:101px;height:101px;">
+                        <img src="images/The_University_of_California_Davis.svg" alt="UC Davis logo"
+                            style="width:101px;height:101px;">
                     </div>
                     <p><b>Master of Science in Computer Science</b><br>
                         University of California, Davis | Sept 2024 - Jun 2026</p>
-                        <br>
+                    <br>
                     <!-- <h3>CGPA: 9.23</h3> -->
                     <!-- <h4>Coursework</h4> -->
-                    <p><b>Coursework</b> : Software Design and Methodologies, Object-Oriented Programming, Artificial Intelligence, 
+                    <p><b>Coursework</b> : Software Design and Methodologies, Object-Oriented Programming, Artificial
+                        Intelligence,
                         Data Science, Operating Systems, Database Management, System Programming, Web Technology</p>
                 </div>
-        
+
                 <div class="education-item">
                     <div class="education-logo">
                         <img src="images/vit-logo.png" alt="VIT logo">
                     </div>
                     <p><b>B.Tech in Information Technology</b><br>
                         Vishwakarma Institute of Technology, Pune, India | Jul 2020 - May 2024</p>
-                        <br>
+                    <br>
                     <!-- <h3>CGPA: 9.23</h3> -->
                     <!-- <h4>Coursework</h4> -->
-                    <p><b>Coursework</b> : Software Design and Methodologies, Object-Oriented Programming, Artificial Intelligence, 
+                    <p><b>Coursework</b> : Software Design and Methodologies, Object-Oriented Programming, Artificial
+                        Intelligence,
                         Data Science, Operating Systems, Database Management, System Programming, Web Technology</p>
                 </div>
             </div>
@@ -222,18 +235,18 @@
             <div class="domain-title">
                 <h2>DOMAINS I WORK WITH</h2>
             </div><br>
-        
+
             <div class="domain-container">
                 <div class="domain-item">
                     <img src="images/full_stack.svg" alt="Full Stack Web Development">
                     <h3>Full Stack Web Development</h3>
                 </div>
-        
+
                 <div class="domain-item">
                     <img src="images/analytics.svg" alt="Data Research and Analytics">
                     <h3>Data Research and Analytics</h3>
                 </div>
-        
+
                 <div class="domain-item">
                     <img src="images/machine_learning.svg" alt="Machine Learning">
                     <h3>Machine Learning</h3>
@@ -243,12 +256,12 @@
             <br><br><br><br>
 
             <div class="work-experience-title" id="work-experience-title">
-                <h2 style="color: white;">WORK EXPERIENCE</h2>
+                <h2 style="color: black;">WORK EXPERIENCE</h2>
             </div>
             <br><br>
-        
+
             <div class="work-experience-timeline">
-                
+
                 <!-- HSBC Experience -->
                 <div class="experience-container">
                     <div class="experience-date">Jul 2023 - Dec 2023</div>
@@ -259,9 +272,12 @@
                     <h4>HSBC Technology India</h4>
                     <hr>
                     <ul>
-                        <li>Worked on EzyOps (the flagship application of the MSS team) and developed a Car Pool system for HSBC employees.</li>
-                        <li>Utilized Vert.x for API creation, Java for backend development, and React.js for frontend implementation, improving user experience by <b>40%</b>.</li>
-                        <li>Collaborated with cross-functional agile teams to conceptualize, develop, and implement the feature, delivering the project on time.</li>
+                        <li>Worked on EzyOps (the flagship application of the MSS team) and developed a Car Pool system
+                            for HSBC employees.</li>
+                        <li>Utilized Vert.x for API creation, Java for backend development, and React.js for frontend
+                            implementation, improving user experience by <b>40%</b>.</li>
+                        <li>Collaborated with cross-functional agile teams to conceptualize, develop, and implement the
+                            feature, delivering the project on time.</li>
                     </ul>
                 </div>
                 <br><br>
@@ -276,12 +292,14 @@
                     <hr>
                     <ul>
                         <li>Studied diverse clustering approaches and the impact of outliers on cluster formation.</li>
-                        <li>Developed two innovative methods for cluster creation, using visualizations like heatmaps and scatter plots to address mixed clusters.</li>
+                        <li>Developed two innovative methods for cluster creation, using visualizations like heatmaps
+                            and scatter plots to address mixed clusters.</li>
                         <li>Achieved <b>88%</b> accuracy on the Fisher Iris dataset.</li>
-                        <li>Presented findings at an international IEEE conference, highlighting the significance of our work.</li>
+                        <li>Presented findings at an international IEEE conference, highlighting the significance of our
+                            work.</li>
                     </ul>
                 </div>
-        
+
             </div>
 
             <br><br><br>
@@ -436,9 +454,9 @@
             <!-- <br><br> -->
 
             <div class="project-title" id="project-title">
-                <h2 style="color: white;">PROJECTS</h2>
+                <h2 style="color: black;">PROJECTS</h2>
             </div><br><br><br>
-        
+
             <div class="projects-container">
                 <div class="project-card">
                     <img src="images/proj-1.png" alt="Project 1" style="height: 300px;">
@@ -450,10 +468,12 @@
                             <li>Integrated QR code detection.</li>
                             <li>Achieved a 95% accuracy rate.</li>
                         </ul>
-                        <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code" target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png" style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;"></a>
+                        <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code"
+                            target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 10px;"></a>
                     </div>
                 </div>
-        
+
                 <div class="project-card">
                     <img src="images/proj-2.webp" alt="Project 2" style="height: 300px;">
                     <div class="project-content">
@@ -463,10 +483,12 @@
                             <li>Used CNN-based classification with GTSRB dataset.</li>
                             <li>Pre-processed input data achieving 93% accuracy.</li>
                         </ul>
-                        <a href="https://github.com/kunjal2002/traffic_sign_ma" target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png" style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;"></a>
+                        <a href="https://github.com/kunjal2002/traffic_sign_ma" target="_blank"
+                            rel="noopener noreferrer"><img src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 55px;"></a>
                     </div>
                 </div>
-        
+
                 <div class="project-card">
                     <img src="images/proj-3.avif" alt="Project 3" style="height: 300px;">
                     <div class="project-content">
@@ -479,7 +501,7 @@
                         <!-- <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code" target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png" style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;"></a> -->
                     </div>
                 </div>
-        
+
                 <div class="project-card">
                     <img src="images/proj_4.png" alt="Project 4" style="height: 300px;">
                     <div class="project-content">
@@ -488,10 +510,12 @@
                             <li>Developed a HMS to enhance hospital operations.</li>
                             <li>Integrated appointment scheduling and test bookings.</li>
                         </ul>
-                        <a href="https://github.com/kunjal2002/DMADM" target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png" style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;"></a>
+                        <a href="https://github.com/kunjal2002/DMADM" target="_blank" rel="noopener noreferrer"><img
+                                src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 75px;"></a>
                     </div>
                 </div>
-        
+
                 <div class="project-card">
                     <img src="images/SP_CP.png" alt="Project 5">
                     <div class="project-content">
@@ -500,7 +524,9 @@
                             <li>Utilized NLTK for text processing.</li>
                             <li>Employed parse trees to resolve ambiguity.</li>
                         </ul>
-                        <a href="https://github.com/kunjal2002/conversion_of_ambiguous_grammar_to_unambiguous" target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png" style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;"></a>
+                        <a href="https://github.com/kunjal2002/conversion_of_ambiguous_grammar_to_unambiguous"
+                            target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 142px;"></a>
                     </div>
                 </div>
             </div>
@@ -509,32 +535,35 @@
 
             <div class="skills" id="skills">
                 <div class="skills-title" style="text-align:center;">
-                    <h2 style="color: white;"><br>SKILLS<br></h2>
+                    <h2 style="color: black;"><br>SKILLS<br></h2>
                 </div><br><br>
-            
+
                 <div class="skills-ucd">
                     <div class="languages">
                         <h3>Languages</h3>
                         <hr>
-                        <p style="font-size: 13px;padding-top:5px;">JAVA, R, Python, PHP, TypeScript, JavaScript, React.js, HTML, CSS</p>
+                        <p style="font-size: 13px;padding-top:5px;">JAVA, R, Python, PHP, TypeScript, JavaScript,
+                            React.js, HTML, CSS</p>
                     </div>
-            
+
                     <div class="databases">
                         <h3>Databases</h3>
                         <hr>
                         <p style="font-size: 13px;padding-top:5px;">MySQL, Oracle</p>
                     </div>
-            
+
                     <div class="tools">
                         <h3>Tools</h3>
                         <hr>
-                        <p style="font-size: 13px;padding-top:5px;">JIRA, Confluence, MS Office Suite Apps, draw.io, Jenkins, Visual Studio, Git, Docker, VS Code, IntelliJ IDEA, Jupyter Notebook</p>
+                        <p style="font-size: 13px;padding-top:5px;">JIRA, Confluence, MS Office Suite Apps, draw.io,
+                            Jenkins, Visual Studio, Git, Docker, VS Code, IntelliJ IDEA, Jupyter Notebook</p>
                     </div>
-            
+
                     <div class="other">
                         <h3>Other</h3>
                         <hr>
-                        <p style="font-size: 13px;padding-top:5px;">GitHub, Data Analysis, Excel, Tableau, TensorFlow</p>
+                        <p style="font-size: 13px;padding-top:5px;">GitHub, Data Analysis, Excel, Tableau, TensorFlow
+                        </p>
                     </div>
                 </div>
             </div><br><br><br><br><br>
@@ -542,9 +571,9 @@
 
             <div class="extracurriculars" id="extracurriculars">
                 <div class="extracurriculars-title" id="extracurriculars-title">
-                    <h2 style="color: white;">EXTRACURRICULAR ACTIVITIES</h2>
+                    <h2 style="color: black;">EXTRACURRICULAR ACTIVITIES</h2>
                 </div><br><br>
-        
+
                 <div class="extracurriculars-timeline">
                     <div class="ex-container">
                         <h2>Student Representative, Board of Studies</h2>
@@ -557,7 +586,7 @@
                             <li>Addressed academic concerns, improving the student experience.</li>
                         </ul>
                     </div>
-        
+
                     <div class="ex-container">
                         <h2>Treasurer</h2>
                         <h4>Computer Society of India, VIT Pune</h4>
@@ -569,7 +598,7 @@
                             <li>Organized 10+ events, including workshops & seminars.</li>
                         </ul>
                     </div>
-        
+
                     <div class="ex-container">
                         <h2>LinkedIn Learning Ambassador</h2>
                         <h4>LinkedIn</h4>
@@ -581,7 +610,7 @@
                             <li>Promoted LinkedIn Learning resources for students.</li>
                         </ul>
                     </div>
-        
+
                     <div class="ex-container">
                         <h2>Database Coordinator</h2>
                         <h4>EPEC VIT, Pune</h4>
@@ -593,7 +622,7 @@
                             <li>Guided volunteers for efficient event execution.</li>
                         </ul>
                     </div>
-        
+
                     <div class="ex-container">
                         <h2>Student Volunteer</h2>
                         <h4>VIT Social Welfare & Development</h4>
@@ -631,14 +660,14 @@
                     <div class="social-1" id="social-1" style="margin-left:620px;">
                         <a href="mailto:kmagrawal@ucdavis.edu" target="_blank" rel="noopener noreferrer"><img
                                 src="images/sending-mail.gif"
-                                style="margin-top:-5px;margin-left:-4px;border-radius:100px;width: 50px;height: 50px;"></a>
+                                style="margin-top:-5px;margin-left:-4px;border-radius:100px;width: 55px;height: 55px;"></a>
                     </div>
 
                     <div class="social-2" id="social-2" style="margin-left:692px;margin-top: 16px;">
                         <span>
                             <a href="https://www.linkedin.com/in/kunjal-agrawal-8b5848206/" target="_blank"
                                 rel="noopener noreferrer"><img src="images/linkedin.gif"
-                                    style="margin-top:-10px;margin-left:-3.5px;border-radius:2px;width: 55px;height: 55px;"></a>
+                                    style="margin-top:-10px;margin-left:-3.5px;border-radius:2px;width: 50px;height: 50px;"></a>
                         </span>
                     </div>
 
@@ -646,14 +675,14 @@
                         style="margin-left:779px;margin-top: 29px;width: 48px;height: 48px;border-radius: 200px;background-color: rgb(255, 255, 255);">
                         <a href="https://github.com/kunjal2002" target="_blank" rel="noopener noreferrer"><img
                                 src="images/github.gif"
-                                style="margin-top:-13px;margin-left:-13px;border-radius:2px;width: 42px;height: 42px;"></a>
+                                style="margin-top:-10px;margin-left:-13px;border-radius:2px;width: 42px;height: 42px;"></a>
                     </div>
 
                     <div class="social-4" id="social-4"
                         style="margin-left:854px;margin-top: 29px;width: 48px;height: 48px;border-radius: 200px;background-color: rgb(255, 255, 255);">
                         <a href="https://www.instagram.com/agrawalkunjal" target="_blank" rel="noopener noreferrer"><img
                                 src="images/instagram.gif"
-                                style="margin-top:-8px;margin-left:-8px;border-radius:2px;width: 36px;height: 36px;"></a>
+                                style="margin-top:-5px;margin-left:-8px;border-radius:2px;width: 36px;height: 36px;"></a>
                     </div>
                 </div>
             </footer>
