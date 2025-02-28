@@ -43,7 +43,7 @@
             transition: transform 0.3s ease;
         }
 
-        .education-item:hover{
+        .education-item:hover {
             transform: scale(1.03);
         }
 
@@ -95,7 +95,8 @@
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top" style="background-color: white;">
-        <img src="images/blue_upward_arrow-removebg-preview.png" style="width: 100%;height: 40px;background-color: white;">
+        <img src="images/blue_upward_arrow-removebg-preview.png"
+            style="width: 100%;height: 40px;background-color: white;">
     </button>
 
 
@@ -147,7 +148,7 @@
         </div>
 
 
-        <div class="main_body" style="background-color: white;">
+        <div class="main_body" style="background-color: white;scroll-behavior: smooth;">
             <br><br><br><br>
 
             <div class="education-title" id="education-title">
@@ -459,75 +460,138 @@
 
             <div class="projects-container">
                 <div class="project-card">
-                    <img src="images/proj-1.png" alt="Project 1" style="height: 300px;">
-                    <div class="project-content" style="padding-top:2px;">
-                        <p>Authentication System Using Facial Recognition and QR Code</p>
-                        <ul>
-                            <li>Developed a permission-based application leveraging Python and OpenCV.</li>
-                            <li>Implemented a robust facial recognition system.</li>
+                    <a href="https://github.com/DevavratSinghBisht/ExpRes" target="_blank" rel="noopener noreferrer" style="text-decoration: none;"><img src="images/social_media.jpg"
+                            alt="Project 1" style="height: 300px;">
+                        <div class="project-content" style="padding-top:-2px;">
+                            <p>ExpRes: Decentralized Social Media Platform</p>
+                            <ul style="justify-content:space-between;">
+                                <li>Developed a decentralized social media platform using React.js, FastAPI, and
+                                    MongoDB, enabling real-time communication with 99% uptime via ResilientDB.</li>
+                                <li>Engineered 8+ secure APIs for core features like message reporting.</li>
+                                <li>Recognized as the outstanding project within the department for innovation and
+                                    execution.</li>
+                                <!-- <li>Implemented a robust facial recognition system.</li>
                             <li>Integrated QR code detection.</li>
-                            <li>Achieved a 95% accuracy rate.</li>
-                        </ul>
-                        <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code"
+                            <li>Achieved a 95% accuracy rate.</li> -->
+                            </ul>
+                            <!-- <a href="https://github.com/DevavratSinghBisht/ExpRes"
                             target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png"
-                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 10px;"></a>
-                    </div>
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 4px;"></a> -->
+                        </div>
+                    </a>
                 </div>
 
                 <div class="project-card">
-                    <img src="images/proj-2.webp" alt="Project 2" style="height: 300px;">
+                    <a href="https://github.com/kunjal2002/smart_bank" target="_blank"
+                            rel="noopener noreferrer" style="text-decoration: none;">
+                    <img src="images/bank.jpg" alt="Project 2" style="height: 300px;">
+                    <div class="project-content">
+                        <p>SmartBank: Automated Banking with Speech-to-text integration</p>
+                        <ul style="justify-content: space-between;">
+                            <li>Designed a full-stack banking system with PHP and MySQL, optimizing transactions and
+                                user accessibility through intuitive UI/UX.</li>
+                            <li>Integrated Web Speech API for voice-driven interactions, reducing wait times and
+                                enhancing automation</li>
+                            <!-- <li>Used CNN-based classification with GTSRB dataset.</li>
+                            <li>Pre-processed input data achieving 93% accuracy.</li> -->
+                        </ul>
+                        <!-- <a href="https://github.com/kunjal2002/smart_bank" target="_blank"
+                            rel="noopener noreferrer"><img src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 50px;"></a> -->
+                    </div></a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/kunjal2002/DMADM" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <img src="images/proj_4.png" alt="Project 3" style="height: 300px;">
+                    <div class="project-content">
+                        <p>MedEase : JAVA-based Hospital Management System</p>
+                        <ul style="justify-content: space-between;">
+                            <li>Developed a JAVA-based app with features like appointment scheduling, doctor
+                                availability, and test booking, enhancing patient satisfaction and reducing scheduling
+                                time.</li>
+                            <li>Integrated JavaFX for a responsive and user-friendly interface.</li>
+                            <li>Optimized SQL queries for 1,000+ records, reducing query latency by 30%.</li>
+                        </ul>
+                        <!-- <a href="https://github.com/kunjal2002/DMADM" target="_blank" rel="noopener noreferrer"><img
+                                src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top:23px;"></a> -->
+                    </div></a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/DevavratSinghBisht/AdaAct" target="_blank"
+                            rel="noopener noreferrer" style="text-decoration: none;">
+                    <img src="images/adaact.jpg" alt="Project 4" style="height: 300px;">
+                    <div class="project-content">
+                        <p>AdaAct: Adaptive Weighted Activation Functions for Neural Networks</p>
+                        <ul style="justify-content: space-between;">
+                            <li>Developed an activation function with data-driven weights, improving flexibility and
+                                generalization, boosting accuracy by 5-18% on CIFAR-10 and CIFAR-100 respectively.</li>
+                            <li>Implemented sparsity regularization to reduce overfitting.</li>
+                            <li>Acieved a 12% reduction and 98% accuracy on CIFAR-10 and 92% on CIFAR-100 with ResNet18
+                                and Vision Transformer models.</li>
+                        </ul>
+                        <!-- <a href="https://github.com/DevavratSinghBisht/AdaAct" target="_blank"
+                            rel="noopener noreferrer"><img src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: -400px;"></a> -->
+                    </div></a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code"
+                            target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <img src="images/proj-1.png" alt="Project 5" style="height: 300px;">
+                    <div class="project-content">
+                        <p>Authentication System Using Facial Recognition and QR Code</p>
+                        <ul style="justify-content: space-between;">
+                            <li>Developed a permission-based application using Pythonto prevent unauthorized access to
+                                important resources,
+                                achieving 98% accuracy in user access control.</li>
+                            <li> Leveraged image preprocessing techniquesto optimize processing efficiency by
+                                40%.</li>
+                        </ul>
+                        <!-- <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code"
+                            target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 39px;"></a> -->
+                    </div></a>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code"
+                            target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <img src="images/proj-2.webp" alt="Project 5" style="height: 300px;">
                     <div class="project-content">
                         <p>Traffic Sign Classification Using CNN</p>
-                        <ul>
-                            <li>Developed a live webcam traffic sign detection system.</li>
-                            <li>Used CNN-based classification with GTSRB dataset.</li>
-                            <li>Pre-processed input data achieving 93% accuracy.</li>
+                        <ul style="justify-content: space-between;">
+                            <li>Developed a classification system using Convolutional Neural Networks (CNN) on the GTSRB
+                                dataset to identify traffic signs, handling 50,000+ images.</li>
+                            <li>Pre-processed and augmented the input data, using OpenCV and TensorFlow, thereby
+                                increased data variation by 40%, ultimately achieving 93% accuracy.</li>
                         </ul>
-                        <a href="https://github.com/kunjal2002/traffic_sign_ma" target="_blank"
-                            rel="noopener noreferrer"><img src="images/github-sign.png"
-                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 55px;"></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/proj-3.avif" alt="Project 3" style="height: 300px;">
-                    <div class="project-content">
-                        <p>Detection of Cyber Bullying using Machine Learning</p>
-                        <ul>
-                            <li>Developed a sentiment analysis project.</li>
-                            <li>Utilized Bi-LSTM achieving 98% accuracy.</li>
-                            <li>Compared with Logistic Regression (67% accuracy).</li>
-                        </ul>
-                        <!-- <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code" target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png" style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;"></a> -->
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/proj_4.png" alt="Project 4" style="height: 300px;">
-                    <div class="project-content">
-                        <p>Hospital Management System Using Java</p>
-                        <ul>
-                            <li>Developed a HMS to enhance hospital operations.</li>
-                            <li>Integrated appointment scheduling and test bookings.</li>
-                        </ul>
-                        <a href="https://github.com/kunjal2002/DMADM" target="_blank" rel="noopener noreferrer"><img
-                                src="images/github-sign.png"
-                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 75px;"></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <img src="images/SP_CP.png" alt="Project 5">
-                    <div class="project-content">
-                        <p>Conversion of Ambiguous Grammar Using Parse Tree</p>
-                        <ul>
-                            <li>Utilized NLTK for text processing.</li>
-                            <li>Employed parse trees to resolve ambiguity.</li>
-                        </ul>
-                        <a href="https://github.com/kunjal2002/conversion_of_ambiguous_grammar_to_unambiguous"
+                        <!-- <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code"
                             target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png"
-                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 142px;"></a>
-                    </div>
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 38px;"></a> -->
+                    </div></a>
+                </div>
+
+                <div class="project-card" style="height: 450px;">
+                    <a href="https://github.com/kunjal2002/conversion_of_ambiguous_grammar_to_unambiguous"
+                            target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                    <img src="images/SP_CP.png" alt="Project    5">
+                    <div class="project-content">
+                        <p>Conversion of Ambiguous Grammar to Unambiguous Using Parse Tree</p>
+                        <ul style="padding-top: 20px;">
+                            <li>Spearheaded the development of an ambiguity resolution system using Python, NLTK, and
+                                natural language processing.</li>
+                            <li>Implemented tokenization, part-of-speech tagging, and dependency parsing to analyze
+                                sentence structure and identify
+                                potential sources of ambiguity with a 90% accuracy rate.</li>
+                        </ul>
+                        <!-- <a href="https://github.com/kunjal2002/conversion_of_ambiguous_grammar_to_unambiguous"
+                            target="_blank" rel="noopener noreferrer"><img src="images/github-sign.png"
+                                style="text-decoration: none;text-align: center;color: black;width: 25px;height: 25px;margin-top: 12px;"></a> -->
+                    </div></a>
                 </div>
             </div>
 
@@ -639,7 +703,6 @@
 
 
 
-            <br><br><br><br><br>
 
             <footer class="site-footer" id="site-footer">
                 <div class="row">
@@ -688,6 +751,10 @@
             </footer>
 
 
+            <br><br>
+            <p
+                style="color: black;display: flex;align-items: center;justify-items: center;margin-left:600px;margin-top:-60px;">
+                © Copyright Kunjal Agrawal. All Rights Reserved</p>
             <br><br>
         </div>
     </div>
