@@ -21,26 +21,40 @@ body {
     position: relative;
     /* background-image: url(personal-portfolio-img/background.jpg); */
     background-color: rgb(59 130 245 / 10%);
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    overflow: hidden;
 }
 
 .home .background-picture {
+    position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
-    height: 701px;
-    /* position: relative; */
-    background-image: url(personal-portfolio-img/background.jpg);
+    height: 100%;
+    object-fit: cover;
+    /* Makes sure the image covers the area without stretching */
     opacity: 0.21;
-    /* background-color: white; */
+    /* Slight opacity for background effect */
+    z-index: -1;
 }
 
+/* Profile and Content Section */
 .my-info {
+    top:10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px; /* Reduced gap for better alignment */
+    flex-wrap: wrap;
     text-align: justify;
-    margin-left: 50%;
-    width: 48%;
-    height: 68%;
-    position: absolute;
-    bottom: 0;
-    line-height: 2rem;
+    padding: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px; /* Set max width for larger screens */
+    box-sizing: border-box;
+    position: relative;
 }
 
 .my-info a {
@@ -54,76 +68,46 @@ body {
     border-radius: 5px;
 }
 
-@media screen and (max-width:768px){
-    .home .background-picture {
-        height:500px;
-    }
-    .my-info{
-        align-items: center;
-        display: flex;
+/* Profile Picture Styling */
+.profile_picture {
+    flex: 0 0 auto;
+    margin-right: 40px; /* Space between image and content */
+}
+
+.responsive {
+    width: 300px; /* Adjust image size */
+    height: auto;
+    border-radius: 20%; /* Optional: round image */
+}
+
+/* Content Styling */
+.content {
+    max-width: 800px; /* Set a maximum width for content */
+    flex: 1;
+}
+
+/* Responsive Design for Mobile and Tablets */
+@media screen and (max-width: 768px) {
+    .my-info {
+        top:80%;
         flex-direction: column;
-        /* margin-top:600%; */
-        /* height: 500vh; */
-    }
-
-    .main-body{
-        margin-top:80%;
-    }
-
-    .image {
-        /* padding-left: 45%;
-        width: 25%;
-        height: 60%;
-        position: relative;
-        bottom: 0; */
-        top:40%;
-        height: 40%;
-    }
-    
-    .image img {
-        height: 100%;
-        /* position: absolute; */
-        left: 50%;
-        bottom: 440px;
-        transform: translateX(-50%);
-        border-radius: 150px;
-    }
-}
-@media screen and (max-width:1024px){
-    .home .background-picture {
-        height:500px;
-    }
-    .my-info{
         align-items: center;
-        display: flex;
-        flex-direction: column;
-        /* margin-top:600%; */
-        /* height: 500vh; */
+        padding: 20px; /* Padding for smaller screens */
+        gap: 15px; /* Reduce space between profile and content */
     }
 
-    .main-body{
-        margin-top:80%;
+    .profile_picture {
+        margin-bottom: 20px; /* Add space between image and content */
+    }
+
+    .responsive {
+        width: 150px; /* Reduce the image size for mobile */
+    }
+
+    .content {
+        max-width: 90%; /* Make content more flexible */
     }
 }
-
-
-.image {
-    padding-left: 45%;
-    width: 25%;
-    height: 60%;
-    position: relative;
-    bottom: 0;
-}
-
-.image img {
-    height: 100%;
-    position: absolute;
-    left: 50%;
-    bottom: 440px;
-    transform: translateX(-50%);
-    border-radius: 150px;
-}
-
 
 #myBtn {
     display: none;
@@ -144,7 +128,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;  /* Ensure full width */
+    width: 100%;
+    /* Ensure full width */
     background-color: black;
     display: flex;
     align-items: center;
@@ -221,8 +206,10 @@ body {
         padding: 11px 0;
         display: none;
         border-radius: 5px;
-        max-height: 70vh; /* Limit the height */
-        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: 70vh;
+        /* Limit the height */
+        overflow-y: auto;
+        /* Enable vertical scrolling */
     }
 
     .nav-links li {
@@ -235,7 +222,7 @@ body {
 
     .nav-links.active {
         display: flex;
-        gap:1px;
+        gap: 1px;
     }
 
     .hamburger.active span:nth-child(1) {
@@ -653,21 +640,21 @@ body {
     padding: 15px;
     text-align: center;
     color: black;
-    font-family:monospace;
+    font-family: monospace;
 }
 
 .project-card p {
     padding-top: -100px;
     font-size: 14px;
     font-weight: bold;
-    font-family:monospace;
+    font-family: monospace;
 }
 
 .project-card ul {
     font-size: 12px;
     padding: 5px;
     text-align: left;
-    font-family:monospace;
+    font-family: monospace;
 }
 
 /* Responsive Design */
@@ -806,7 +793,7 @@ ul li {
     color: black;
 }
 
-hr{
+hr {
     margin-bottom: 10px;
 }
 
