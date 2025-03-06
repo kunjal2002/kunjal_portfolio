@@ -17,14 +17,17 @@ body {
 
 .home {
     width: 100%;
-    min-height: 100vh; /* Ensures it takes the full height of the viewport */
+    min-height: 100vh;
+    /* Ensures it takes the full height of the viewport */
     position: relative;
     background-color: rgb(59 130 245 / 10%);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevents unwanted scroll */
-    padding: 0; /* Remove extra padding that might be causing overflow */
+    overflow: hidden;
+    /* Prevents unwanted scroll */
+    padding: 0;
+    /* Remove extra padding that might be causing overflow */
     box-sizing: border-box;
 }
 
@@ -44,18 +47,20 @@ body {
 
 /* Profile and Content Section */
 .my-info {
-    margin-top:110px;
-    top:10%;
+    margin-top: 110px;
+    top: 10%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 30px; /* Reduced gap for better alignment */
+    gap: 30px;
+    /* Reduced gap for better alignment */
     flex-wrap: wrap;
     text-align: justify;
     padding: 0px 20px;
     z-index: 1;
     width: 100%;
-    max-width: 1200px; /* Set max width for larger screens */
+    max-width: 1200px;
+    /* Set max width for larger screens */
     box-sizing: border-box;
     position: relative;
 }
@@ -73,76 +78,88 @@ body {
 
 /* Profile Picture Styling */
 .profile_picture {
-    margin-top:-20px;
+    margin-top: -20px;
     flex: 0 0 auto;
-    margin-right: 40px; /* Space between image and content */
+    margin-right: 40px;
+    /* Space between image and content */
 }
 
 .responsive {
-    width: 300px; /* Adjust image size */
+    width: 300px;
+    /* Adjust image size */
     height: auto;
-    border-radius: 20%; /* Optional: round image */
+    border-radius: 20%;
+    /* Optional: round image */
 }
 
 /* Content Styling */
 .content {
-    max-width: 800px; /* Set a maximum width for content */
+    max-width: 800px;
+    /* Set a maximum width for content */
     flex: 1;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
     line-height: 28px;
-    font-size:16.5px;
+    font-size: 16.5px;
 }
 
 /* Responsive Design for Mobile and Tablets */
 @media screen and (max-width: 768px) {
     .my-info {
         /* margin-top:80px; */
-        top:80%;
+        top: 80%;
         flex-direction: column;
         align-items: center;
-       /* Padding for smaller screens */
-        padding:10px;
-        gap: 15px; /* Reduce space between profile and content */
+        /* Padding for smaller screens */
+        padding: 10px;
+        gap: 15px;
+        /* Reduce space between profile and content */
     }
 
     .profile_picture {
-        margin-bottom: -5px; /* Add space between image and content */
+        margin-bottom: -5px;
+        /* Add space between image and content */
     }
 
     .responsive {
-        width: 150px; /* Reduce the image size for mobile */
+        width: 150px;
+        /* Reduce the image size for mobile */
     }
 
     .content {
-        max-width: 90%; /* Make content more flexible */
+        max-width: 90%;
+        /* Make content more flexible */
         /* letter-spacing: 1px;  */
         line-height: 20px;
-        font-size:12px;
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .my-info {
-        margin-top:100px;
+        margin-top: 100px;
         /* top:80%; */
         flex-direction: column;
         align-items: center;
-       /* Padding for smaller screens */
-        padding:10px;
-        gap: 15px; /* Reduce space between profile and content */
+        /* Padding for smaller screens */
+        padding: 10px;
+        gap: 15px;
+        /* Reduce space between profile and content */
     }
 
     .profile_picture {
-        margin-bottom: -5px; /* Add space between image and content */
+        margin-bottom: -5px;
+        /* Add space between image and content */
     }
 
     .responsive {
-        width: 150px; /* Reduce the image size for mobile */
+        width: 150px;
+        /* Reduce the image size for mobile */
     }
 
     .content {
-        max-width: 90%; /* Make content more flexible */
-        font-size:-1px;
+        max-width: 90%;
+        /* Make content more flexible */
+        font-size: -1px;
         line-height: 20px;
     }
 }
@@ -847,6 +864,7 @@ hr {
 
     .ex-container {
         width: 80%;
+        font-size:12px;
     }
 
     .ex-container::before {
@@ -1011,6 +1029,46 @@ span {
     color: white;
     text-align: center;
     font-size: 7.1em;
+}
+
+.copyright-message {
+    display: flex;
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    padding: 20px;
+    /* Add some padding to the footer */
+    /* background-color: #333; */
+    /* Dark background for the footer */
+    color: white;
+    /* Text color */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+#footer-message {
+    text-align: center;
+    /* margin-left: 641px; */
+}
+
+@media screen and (max-width: 768px) {
+    #footer-message {
+        font-size: 14px;
+        /* Smaller text on smaller screens */
+        padding: 10px;
+        /* Reduce padding on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #footer-message {
+        font-size: 12px;
+        /* Even smaller text on very small screens */
+        padding: 5px;
+        /* Adjust padding for extra small screens */
+    }
 }
 
 /* .social-1:hover{
