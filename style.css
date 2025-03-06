@@ -155,11 +155,10 @@ body {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     cursor: pointer;
     border-radius: 4px;
-
 }
 
 #navbar {
