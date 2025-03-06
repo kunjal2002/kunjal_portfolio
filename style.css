@@ -864,7 +864,7 @@ hr {
 
     .ex-container {
         width: 80%;
-        font-size:12px;
+        font-size: 12px;
     }
 
     .ex-container::before {
@@ -969,7 +969,13 @@ hr {
 .site-footer {
     padding: 3em 0;
     /* max-width: 1000px; */
-    margin-bottom: 100px;
+    margin-bottom: 51px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+    flex-direction: column;
 }
 
 /* .mb-5, .my-5 {
@@ -977,6 +983,8 @@ hr {
 } */
 
 .row {
+    flex-wrap: wrap;
+    /* margin-left:20px; */
     /* display: -webkit-box;
     display: -ms-flexbox; */
     display: flex;
@@ -984,7 +992,11 @@ hr {
     /* flex-wrap: wrap; */
     /* margin-right: -15px; */
     /* margin-left: 125px; */
-    margin-bottom: 3rem !important;
+    /* margin-bottom: 3rem !important; */
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    text-align: center;
     /* justify-content: center; */
 }
 
@@ -992,12 +1004,12 @@ hr {
 .social-2,
 .social-3,
 .social-4 {
-    position: absolute;
+    position: relative;
     /* left: 0%; */
     margin-top: 20px;
     /* margin-left: 121px; */
-    width: 380px;
-    padding: 10px;
+    /* width: 380px; */
+    /* padding: 5px; */
     line-height: 1.8rem;
     /* background: #333; */
     /* -webkit-transition: .3s all ease; */
@@ -1012,6 +1024,72 @@ hr {
     /* display:flex;
     justify-content: center;
     align-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .social-1,
+    .social-2,
+    .social-3,
+    .social-4 {
+        margin-top: 10px;
+        /* Reduce space between icons */
+        width: 50px;
+        height: 50px;
+    }
+
+    .social-1 img,
+    .social-2 img,
+    .social-3 img,
+    .social-4 img {
+        width: 40px;
+        /* Adjust icon size */
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .social-1,
+    .social-2,
+    .social-3,
+    .social-4 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-1 img,
+    .social-2 img,
+    .social-3 img,
+    .social-4 img {
+        width: 35px;
+        /* Adjust icon size */
+        height: 35px;
+    }
+}
+
+/* For very small screens like extra-small phones */
+@media screen and (max-width: 480px) {
+
+    .social-1,
+    .social-2,
+    .social-3,
+    .social-4 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-1 img,
+    .social-2 img,
+    .social-3 img,
+    .social-4 img {
+        width: 30px;
+        /* Even smaller icon for very small screens */
+        height: 30px;
+    }
 }
 
 span {
