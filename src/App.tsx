@@ -216,7 +216,7 @@ const App = () => {
                 My passion lies at the intersection of Full-Stack development and data-driven innovation. From building intuitive front-end experiences with React to crafting reliable backends in Java and Python, I enjoy turning ideas into impactful solutions. With a keen interest in Machine Learning and AI, I love exploring how data can unlock new possibilities and drive smarter decisions. Always curious, I'm excited by challenges that blend software craftsmanship with AI to create meaningful change. {/* shortened for brevity */}
               </p>
               <a
-                href="/Kunjal_SDE_and_ML.pdf"
+                href="./Kunjal_SDE_and_ML.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
