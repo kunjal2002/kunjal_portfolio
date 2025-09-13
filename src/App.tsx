@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react"
 import ClickSpark from "./ClickSpark";
 
 import { useEffect, useState } from 'react';
@@ -694,6 +695,7 @@ const App = () => {
 
 
         </div>
+        <Analytics />
       </div>
     </ClickSpark>
   );
