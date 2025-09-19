@@ -1060,7 +1060,15 @@ hr {
   position: relative;
   flex-direction: column;
 }
-
+#home, 
+#education-title, 
+#work-experience-title, 
+#project-title, 
+#skills, 
+#extracurriculars, 
+#site-footer {
+  scroll-margin-top: 110px; /* adjust to match your navbar height */
+}
 /* .mb-5, .my-5 {
     margin-bottom: 3rem !important;
 } */
