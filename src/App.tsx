@@ -245,9 +245,7 @@ const App = () => {
                 University of California, Davis | Sept 2024 - Jun 2026</p>
               <br />
 
-              <p><b>Coursework</b> : Software Design and Methodologies, Object-Oriented Programming, Artificial
-                Intelligence,
-                Data Science, Operating Systems, Database Management, System Programming, Web Technology</p>
+              <p><b>Coursework</b> : Distributed Database Systems, Machine Learning and Discovery, Software Engineering, Advanced Topics in Vision - Language Research, Design and Analysis of Algorithms</p>
             </div>
 
             <div className="education-item">
@@ -295,6 +293,24 @@ const App = () => {
           <br /><br />
 
           <div className="work-experience-timeline">
+            {/* Cohesity Experience */}
+            <div className="experience-container">
+              <div className="experience-date">Jun 2025 - Sept 2025</div>
+              <div className="experience-header">
+                <h2>Software Engineer Intern</h2>
+                <img src="../images/cohesity_logo.png" alt="Cohesity Logo" style={{ width: "auto", height: "20px" }} />
+              </div>
+              <h4 style={{paddingTop:"10px"}}>Cohesity</h4>
+              <hr />
+              <ul>
+                <li>Designed and implemented an MCP server using <b>FastMCP</b>, integrating <b>Cohesity's RecoveryAgent</b> and <b>Anthropic Claude</b> to automate data recovery.</li>
+                <li>Enabled natural language orchestration via Claude, allowing <b>AI agents</b> to perform recovery tasks, <b>increasing developer productivity</b> through AI-driven workflow automation.</li>
+                <li>Ensured robust production deployment by adding advanced error handling, authentication, and observability, contributing to <b>99.99%</b> uptime and improved reliability.</li>
+              </ul>
+            </div>
+            
+            <br/><br/>
+
             {/* HSBC Experience */}
             <div className="experience-container">
               <div className="experience-date">Jul 2023 - Dec 2023</div>
@@ -498,14 +514,14 @@ const App = () => {
               <div className="languages">
                 <h3>Languages</h3>
                 <hr />
-                <p style={{ fontSize: "13px", paddingTop: "5px" }}>JAVA, R, Python, PHP, TypeScript, JavaScript,
+                <p style={{ fontSize: "13px", paddingTop: "5px" }}>JAVA, Python, PHP, TypeScript, JavaScript,
                   React.js, HTML, CSS</p>
               </div>
 
               <div className="databases">
-                <h3>Databases</h3>
+                <h3>Databases and AI Agents</h3>
                 <hr />
-                <p style={{ fontSize: "13px", paddingTop: "5px" }}>MySQL, Oracle</p>
+                <p style={{ fontSize: "13px", paddingTop: "5px" }}>MySQL, Oracle, Google Gemini, GitHub Copilot, Anthropic Claude, Windsurf</p>
               </div>
 
               <div className="tools">
@@ -519,7 +535,7 @@ const App = () => {
                 <h3>Frameworks and Libraries</h3>
                 <hr />
                 <p style={{ fontSize: "13px", paddingTop: "5px" }}>JavaFX, JUnit, Vert.x, Apache Spark, TensorFlow,
-                  PyTorch, Keras, OpenCV, FastAPI
+                  PyTorch, Keras, OpenCV, FastAPI, FastMCP
                 </p>
               </div>
             </div>
