@@ -29,6 +29,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+## Deployment note - Vercel analytics
+
+- This repo includes a dynamic loader for Vercel Analytics. To enable analytics on Vercel deployments set `REACT_APP_ENABLE_VERCEL_ANALYTICS=true`.
+- For Git-based deployments from this repository the `vercel.json` file currently sets that env var so Analytics will be enabled when Vercel builds this project.
+- If you prefer to control the variable in the Vercel dashboard instead, remove or update `vercel.json` and set the environment variable in the Project → Settings → Environment Variables in Vercel.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
