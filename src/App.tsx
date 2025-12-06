@@ -5,6 +5,16 @@ import ClickSpark from "./ClickSpark";
 
 import { useEffect, useState } from 'react';
 
+// Move intro lines out of the component to avoid useEffect dependency warnings
+const INTROS = [
+  "Engineer fluent in Java, Python, and turning ideas into scalable systems.",
+  "Bridging front-end elegance with back-end resilience.",
+  "AI explorer by day, data whisperer by night — driven by impact.",
+  "Obsessed with clean code, clever abstractions, and caffeine-powered debugging.",
+  "From RESTful APIs to regression models — I architect, optimize, and deliver.",
+  "Enjoy having conversations over tea/coffee:)"
+];
+
 const useGoogleAnalytics = () => {
   useEffect(() => {
     const script1 = document.createElement('script');
@@ -93,18 +103,10 @@ const App = () => {
   }, []);
 
   const scrollToTop = () => {
-    console.log("Scroll button clicked");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const intros = [
-    "Engineer fluent in Java, Python, and turning ideas into scalable systems.",
-    "Bridging front-end elegance with back-end resilience.",
-    "AI explorer by day, data whisperer by night — driven by impact.",
-    "Obsessed with clean code, clever abstractions, and caffeine-powered debugging.",
-    "From RESTful APIs to regression models — I architect, optimize, and deliver.",
-    "Enjoy having conversations over tea/coffee:)"
-  ];
+  // use INTROS defined at module scope (refer to INTROS directly)
 
   const TYPING_SPEED = 51;   // ms per character
   const PAUSE_AFTER_TYPING = 1100;  // ms to wait after typing full sentence
@@ -118,19 +120,19 @@ const App = () => {
   useEffect(() => {
     let timer: NodeJS.Timeout;
 
-    if (!isDeleting && displayedText === intros[bioIndex]) {
+    if (!isDeleting && displayedText === INTROS[bioIndex]) {
       // Wait after finishing typing
       timer = setTimeout(() => setIsDeleting(true), PAUSE_AFTER_TYPING);
     } else if (isDeleting && displayedText === "") {
       // Wait after deleting then move to next intro
       timer = setTimeout(() => {
         setIsDeleting(false);
-        setBioIndex((prev) => (prev + 1) % intros.length);
+        setBioIndex((prev) => (prev + 1) % INTROS.length);
       }, PAUSE_AFTER_DELETING);
     } else {
       // Continue typing or deleting
       timer = setTimeout(() => {
-        const fullText = intros[bioIndex];
+        const fullText = INTROS[bioIndex];
         if (isDeleting) {
           setDisplayedText(fullText.substring(0, displayedText.length - 1));
         } else {
@@ -148,8 +150,7 @@ const App = () => {
         {showScrollBtn && (
           <button
             onClick={() => {
-              console.log("Scroll button clicked");
-              window.scrollTo({ top: 0, behavior: "smooth" });
+              scrollToTop();
             }}
             id="myBtn"
             title="Go to top"
