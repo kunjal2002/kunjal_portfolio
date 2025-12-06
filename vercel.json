@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "env": {
+    "REACT_APP_ENABLE_VERCEL_ANALYTICS": "true"
+  }
+}

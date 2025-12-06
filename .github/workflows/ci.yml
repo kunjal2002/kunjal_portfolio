@@ -23,3 +23,9 @@ jobs:
         run: npm test -- --watchAll=false
       - name: Build
         run: npm run build
+      - name: Smoke-test built site
+        run: |
+          # serve the build and verify HTTP 200 on root
+          npx http-server ./build -p 5000 &
+          sleep 2
+          curl -f http://localhost:5000 || (cat ./build/index.html && exit 1)
