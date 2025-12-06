@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Analytics } from "@vercel/analytics/react"
+// Load Vercel Analytics dynamically only when enabled via env var
 import ClickSpark from "./ClickSpark";
 
 import { useEffect, useState } from 'react';
@@ -56,6 +56,28 @@ const App = () => {
 
 
   const [showScrollBtn, setShowScrollBtn] = useState(false);
+  const [AnalyticsComp, setAnalyticsComp] = useState<React.ComponentType | null>(null);
+
+  useEffect(() => {
+    // Enable by setting REACT_APP_ENABLE_VERCEL_ANALYTICS=true in environment (only on deployments where the script is available)
+    try {
+      const enabled = process.env.REACT_APP_ENABLE_VERCEL_ANALYTICS === 'true';
+      if (!enabled) return;
+    } catch (err) {
+      return;
+    }
+
+    let mounted = true;
+    import('@vercel/analytics/react')
+      .then((mod) => {
+        if (mounted && mod && mod.Analytics) setAnalyticsComp(() => mod.Analytics);
+      })
+      .catch(() => {
+        // ignore import errors — avoid noisy 404s when the script isn't available
+      });
+
+    return () => { mounted = false; };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -642,7 +664,7 @@ const App = () => {
             <div className="row">
               <div className="social-1">
                 <a
-                  href="mailto:kmagrawal@ucdavis.edu"
+                  href="mailto:kunjalagrawal2002@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -711,7 +733,7 @@ const App = () => {
 
 
         </div>
-        <Analytics />
+        {AnalyticsComp ? <AnalyticsComp /> : null}
       </div>
     </ClickSpark>
   );
