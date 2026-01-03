@@ -318,6 +318,24 @@ const App = () => {
           <div className="work-experience-timeline">
             {/* Cohesity Experience */}
             <div className="experience-container">
+              <div className="experience-date">Sept 2025 - Dec 2025</div>
+              <div className="experience-header">
+                <h2>Software Engineer Intern (FALL CO-OP)</h2>
+                <img src="../images/cohesity_logo.png" alt="Cohesity Logo" style={{ width: "auto", height: "20px" }} />
+              </div>
+              <h4 style={{paddingTop:"10px"}}>Cohesity</h4>
+              <hr />
+              <ul>
+                <li>Built end-to-end <b>automation</b> for VMware workloads, covering <b>backup creation, file hash scanning, and triggering coordinated Temporal workflows</b> for backup and snapshot operations.</li>
+                <li>In addition, I solved a common source of test breakage caused by <b>service API changes</b> across repositories.</li>
+                <li>I wrote an automation script that <b>detects changes in core services</b> (sitting in different repositories) fetches updates, and <b>applies</b> them to the <b>automation repository</b>, ensuring API compatibility without manual line-by-line verification.</li>
+                <li>This significantly reduced maintenance overhead, prevented test drift, and kept automation in sync with rapidly evolving heavy backend services—improving test reliability and developer velocity.</li>
+              </ul>
+            </div>
+
+            <br/><br/>
+
+            <div className="experience-container">
               <div className="experience-date">Jun 2025 - Sept 2025</div>
               <div className="experience-header">
                 <h2>Software Engineer Intern</h2>
@@ -383,9 +401,23 @@ const App = () => {
 
           <div className="projects-container">
             <div className="project-card">
+              <a href="https://github.com/kunjal2002/ecs_235" target="_blank"
+                rel="noopener noreferrer" style={{ textDecoration: "none" }}><img src="../images/dns_ids.jpg"
+                  alt="Project 1" style={{ height: "300px" }} />
+                <div className="project-content" style={{ paddingTop: "-2px" }}>
+                  <p>DNS-Based Intrusion Detection System</p>
+                  <ul style={{ justifyContent: "space-between" }}>
+                    <li>Built a threat detection system implementing 5 behavioral algorithms (flooding, NXDOMAIN, subdomain attacks, amplification, exfiltration) using threshold analysis (100 qps, 70% ratios, 4.5 entropy) with adaptive scaling and risk scoring (0-100).</li>
+                    <li>Built Spring Boot REST API with React dashboard providing real-time analysis, severity classification (CRITICAL/HIGH/MEDIUM/LOW), and actionable security recommendations for incident response.</li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+
+            <div className="project-card">
               <a href="https://github.com/cyn-crypto/ECS-260-Term-Project" target="_blank"
                 rel="noopener noreferrer" style={{ textDecoration: "none" }}><img src="../images/forked_and_forgotten.jpg"
-                  alt="Project 1" style={{ height: "300px" }} />
+                  alt="Project 2" style={{ height: "300px" }} />
                 <div className="project-content" style={{ paddingTop: "-2px" }}>
                   <p>Forked and Forgotten : The Uncertain Lifespan of Open Source Software Developers</p>
                   <ul style={{ justifyContent: "space-between" }}>
@@ -402,7 +434,7 @@ const App = () => {
 
             <div className="project-card">
               <a href="https://github.com/DevavratSinghBisht/ExpRes" target="_blank" rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}><img src="../images/social_media.jpg" alt="Project 1"
+                style={{ textDecoration: "none" }}><img src="../images/social_media.jpg" alt="Project 3"
                   style={{ height: "300px" }} />
                 <div className="project-content" style={{ paddingTop: "-2px" }}>
                   <p>ExpRes: Decentralized Social Media Platform</p>
@@ -421,7 +453,7 @@ const App = () => {
             <div className="project-card">
               <a href="https://github.com/kunjal2002/smart_bank" target="_blank" rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}>
-                <img src="../images/bank.jpg" alt="Project 2" style={{ height: "300px" }} />
+                <img src="../images/bank.jpg" alt="Project 4" style={{ height: "300px" }} />
                 <div className="project-content">
                   <p>SmartBank: Automated Banking with Speech-to-text integration</p>
                   <ul style={{ justifyContent: "space-between" }}>
@@ -438,7 +470,7 @@ const App = () => {
             <div className="project-card">
               <a href="https://github.com/kunjal2002/DMADM" target="_blank" rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}>
-                <img src="../images/proj_4.png" alt="Project 3" style={{ height: "300px" }} />
+                <img src="../images/proj_4.png" alt="Project 5" style={{ height: "300px" }} />
                 <div className="project-content">
                   <p>MedEase : JAVA-based Hospital Management System</p>
                   <ul style={{ justifyContent: "space-between" }}>
@@ -456,7 +488,7 @@ const App = () => {
             <div className="project-card">
               <a href="https://github.com/DevavratSinghBisht/AdaAct" target="_blank" rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}>
-                <img src="../images/adaact.jpg" alt="Project 4" style={{ height: "300px" }} />
+                <img src="../images/adaact.jpg" alt="Project 6" style={{ height: "300px" }} />
                 <div className="project-content">
                   <p>AdaAct: Adaptive Weighted Activation Functions for Neural Networks</p>
                   <ul style={{ justifyContent: "space-between" }}>
@@ -475,7 +507,7 @@ const App = () => {
             <div className="project-card">
               <a href="https://github.com/kunjal2002/authentication_system_using_facial_recognition_and_qr_code"
                 target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                <img src="../images/proj-1.png" alt="Project 5" style={{ height: "300px" }} />
+                <img src="../images/proj-1.png" alt="Project 7" style={{ height: "300px" }} />
                 <div className="project-content">
                   <p>Authentication System Using Facial Recognition and QR Code</p>
                   <ul style={{ justifyContent: "space-between" }}>
@@ -493,7 +525,7 @@ const App = () => {
             <div className="project-card">
               <a href="https://github.com/kunjal2002/traffic_sign_ma"
                 target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                <img src="../images/proj-2.webp" alt="Project 5" style={{ height: "300px" }} />
+                <img src="../images/proj-2.webp" alt="Project 8" style={{ height: "300px" }} />
                 <div className="project-content">
                   <p>Traffic Sign Classification Using CNN</p>
                   <ul style={{ justifyContent: "space-between" }}>
@@ -510,7 +542,7 @@ const App = () => {
             <div className="project-card">
               <a href="https://github.com/kunjal2002/conversion_of_ambiguous_grammar_to_unambiguous"
                 target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                <img src="../images/SP_CP.png" alt="Project    5" />
+                <img src="../images/SP_CP.png" alt="Project 9" />
                 <div className="project-content">
                   <p>Conversion of Ambiguous Grammar to Unambiguous Using Parse Tree</p>
                   <ul style={{ paddingTop: "20px" }}>
