@@ -318,7 +318,7 @@ const App = () => {
           <div className="work-experience-timeline">
             {/* Cohesity Experience */}
             <div className="experience-container">
-              <div className="experience-date">Sept 2025 - Dec 2025</div>
+              <div className="experience-date">Sept 2025 - Jun 2026</div>
               <div className="experience-header">
                 <h2>Software Engineer Intern (FALL CO-OP)</h2>
                 <img src="../images/cohesity_logo.png" alt="Cohesity Logo" style={{ width: "auto", height: "20px" }} />
